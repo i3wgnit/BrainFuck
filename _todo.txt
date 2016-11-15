@@ -1,0 +1,10 @@
+Set programming language
+Make basic memory arrays and objects
+Write parser
+Write smart var allocation ( keep var or not )
+Write Goto
+Write Free var
+Write all https://esolangs.org/wiki/Brainfuck_algorithms
+    Write basic algo
+    Write if and logic
+    Write smart algo ( keep or not )
