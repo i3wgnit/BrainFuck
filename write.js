@@ -9,24 +9,17 @@ function add( num ) {
 function write( str ) {
 
     // Setting up input as variable for later
-    var input = str,
-        rst = "";
-
-    // Setting up rst as unique chars
-    input.split( "" )
-            .forEach( function( el ) {
-            if ( rst.search( el ) < 0 ) {
-                rst += el;
-            }
-        } );
-    rst = rst.split( "" )
-        .join( "" );
-
-    // Setting up targets from rst charcode
-    var targets = rst.split( "" )
-        .map( function( el ) {
+    var input = str.split( "" ).map( function( el ) {
             return el.charCodeAt( 0 );
-        } );
+        } ),
+        targets = [];
+
+    // Setting up targets as unique chars
+    for ( var i = 0; i < input.length; i += 1 ) {
+        if ( targets.indexOf( input[i] ) < 0 ) {
+            targets.push( input[i] );
+        }
+    }
 
     // Should solve for smallest positive integer k
     // let s and a be integers element of [-128,128]-{0}
@@ -177,7 +170,7 @@ function write( str ) {
     var curr = 0,
         set = {};
     for ( var i = 0; i < input.length; i += 1 ) {
-        var l = rst.indexOf( input.charAt( i ) ),
+        var l = targets.indexOf( input[i] ),
             sign = Math.sign( l - curr );
         for ( ; curr != l; curr += sign ) {
             bf += sign > 0 ? ">" : "<";
