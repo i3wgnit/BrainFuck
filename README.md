@@ -1,5 +1,9 @@
-BrainFuck
+BrainFuck (ABANDONNED)
 =========
+
+The write function works, tho its a bit stupid.
+It optimises for size, but not for performance... (◕‿◕✿)
+
 just a side project of mine
 
 (Code) -->  BF transpiler
