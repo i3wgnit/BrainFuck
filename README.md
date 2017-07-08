@@ -1,7 +1,7 @@
 BrainFuck (ABANDONNED)
 =========
 
-The write function works, tho its a bit stupid.
+The [write function](http://fiddle.jshell.net/38aeb4ba/13/embedded/result/) works, tho its a bit stupid.
 It optimises for size, but not for performance... (◕‿◕✿)
 
 just a side project of mine
