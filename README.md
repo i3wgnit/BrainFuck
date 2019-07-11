@@ -1,4 +1,4 @@
-BrainFuck (ABANDONNED)
+BrainFuck (ABANDONED)
 =========
 
 The [write function](http://fiddle.jshell.net/38aeb4ba/13/embedded/result/) works, tho its a bit stupid.
